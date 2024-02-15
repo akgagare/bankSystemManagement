@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="outer-form">
+    <%- include('header') %>
+    <h1>ALL USERS</h1>
+    <%for(let i=0;i<allUser.length;i++) {%>
+        <div class="line">
+            <a href="/customer/<%-allUser[i]._id %>"><div class="single-user"><h4 class="user-name"><%-allUser[i].name %></h4></div></a>
+            <div>
+                <a href="/transferForm/<%-allUser[i]._id %>"><button class="btn">Transfer</button></a>
+                <a href="/customer/<%- allUser[i]._id %>"><button class="btn2">Check Balance</button></a>
+            </div>  
+        </div>
+    <% } %>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Form</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head> 
+<body class="outer-form">
+    <%- include('header') %>
+    <div class="form">
+    <form action="/transfer/<%- user._id %>?_method=PUT" method="POST" >
+        <div class="form-content">
+        <label class="label">From:</label>
+        <h1><%-user.name %></h1>
+
+        <label class="label">To:</label>
+        <input type="text" name="name" placeholder="Transfer To" class="input" id="transferTo"></input>
+
+        <label class="label">Amount:</label>
+        <input type="number" name="balance_amount" placeholder="Transfer Amount To" class="input" id="amt"></input>
+        
+        
+
+        <button type="submit">Submit</button>
+    </div>
+    </form>
+</div>
+
+</body>
+</html>

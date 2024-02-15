@@ -1,0 +1,254 @@
+.user-info{
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(248, 244, 244);
+    font-size: 20px;
+    border-radius: 10px;
+    width: 70%;
+    height: 70%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.9);
+    padding-left:15px;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.user-name{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    text-decoration: none !important ;
+    color: black;
+}
+.line:hover{
+    transition: 2s ease;
+    transform: scale(1.05);
+}
+.line{
+    width: 80%;
+    height: 80px;
+    margin-left: 25px;
+    background-color: rgb(195, 248, 248);
+    border-radius: 10px;
+    box-shadow: 0 10px 5px 0 rgb(73, 71, 71);
+    padding-left: 20px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    margin-right: 25px;
+    margin-top: 25px;
+    width: 90px;
+    height: 30px;
+    background-color: aqua;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: black;
+    align-items: center;
+
+}
+.outer-form{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    position: relative;
+    overflow-y:auto;
+}
+.btn2{
+    margin-right: 25px;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    bottom:18px;
+    background-color: aqua;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 35px;
+    color: black;
+}
+
+
+.form{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    height: 30rem;
+    width: 60rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 13rem;
+    border-radius:7px;
+    margin-top: 5rem;
+    animation: gradient 1s ease infinite;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.form-content{
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    width: 14rem;
+    height: 2rem;
+}
+.label{
+    color: aliceblue;
+    font-size: 30px;
+}
+/* HOME PAGE */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.nav{
+    height:60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6vw 4vw;
+    box-shadow: 0 40px 80px rgba(32, 178, 170, 1.7);
+    
+    z-index: 100;
+}
+.nav-part2{
+    display: flex;
+    justify-content: center;
+    gap:4vw;
+    font-size: 30px;
+}
+.nav h2{
+    font-size: 2vw;
+    font-weight: 700;
+}
+.nav h4{
+    font-size: 1vw;
+    font-weight: 800;
+}
+.nav i{
+    font-size: 1.5vw;
+    display: none;
+}
+.content{
+    height:calc(100% - 60px);
+    width: 100%;
+    /* background-color: rgb(235, 193, 179); */
+    display: flex;
+    position: relative;
+}
+.left{
+    height: 100%;
+    width: 50%;
+    padding: 7vw  7vw;
+}
+.right{
+    height: 100%;
+    width: 50%;
+    
+}
+.left h1{
+    font-size: 4vw;
+    font-family: 'Gilroy';
+    line-height: 4.4vw;
+}
+.left span{
+    color: lightseagreen;
+}
+.left p{
+    font-size: 1vw;
+    font-weight:900;
+    width: 80%;
+    margin-top: 3vw;
+    margin-bottom: 4vw;
+}
+button{
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
+    background-color: lightseagreen;
+    color: #fff;
+    border-radius: 5px ;
+    font-weight:700;
+    border: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+.right img{
+    height: 100%;
+    width: 100%;
+    
+}
+.left p::selection{
+    color:mediumspringgreen
+}
+@media(max-width:600px){
+    .nav{
+        background-color: lightseagreen;
+        color: blanchedalmond;
+        padding: 0 6vw;
+    }
+    .nav h2{
+        font-size: 6vw;
+        font-weight: 700;
+    }
+    .nav h4{
+        font-size: 4vw;
+        display: none;
+    }
+    .nav i{
+        font-size: 6vw;
+        display: initial;
+    }
+    .content{
+        height: calc(100% - 60px);
+        width: 100%;
+        flex-direction: column;
+    }
+    .left{
+        height: fit-content;
+        width: 100%;
+    }
+    .left h1{
+        font-size: 11vw;
+        line-height: 3vw;
+    }
+    .left span{
+        line-height: 8vw;
+    }
+    .left p{
+        font-size: 6vw;
+    }
+    .right{
+        width: 100%;
+    }
+    .button{
+        font-size: 8vw;
+        font-weight: 1000;
+    }
+}
+.elements{
+    margin-top: 20px;
+    display: flex;
+    gap:25px;
+    font-size: 35px;
+}
+
